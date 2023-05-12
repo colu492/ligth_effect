@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+}
+h2{
+    font-size: 15em;
+    cursor: default;
+}
+.luz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0,0,0,0.95) 20%);
+
+    /* Esta propiedad CSS está estableciendo un fondo con un gradiente radial que se extiende desde el
+    punto de origen del círculo definido por las coordenadas CSS personalizadas --x y --y (que se actualizan
+    dinámicamente mediante el código JavaScript). El gradiente radial está compuesto por dos colores:
+    transparente y un tono oscuro de negro.
+    La función circle define la forma del gradiente como un círculo perfecto, mientras que la palabra
+    clave at indica que el punto de origen del gradiente se encuentra en las coordenadas especificadas
+    por las variables CSS personalizadas --x y --y.
+    En términos de la sintaxis de la propiedad, "transparent 10%" indica que el gradiente se inicia en
+    el punto de origen con un color transparente y una opacidad del 10%, mientras que "rgba(0,0,0,0.95) 20%"
+    define el color del gradiente a medida que se extiende desde el punto de origen, que en este caso es un
+    tono oscuro de negro con una opacidad del 95%.*/
+
+    /* This CSS property sets a background with a radial gradient that extends from the origin point of the circle,
+    defined by the custom CSS coordinates --x and --y (which are dynamically updated through JavaScript code).
+    The radial gradient is composed of two colors: transparent and a dark shade of black.
+    The circle function defines the shape of the gradient as a perfect circle, while the at keyword indicates
+    that the origin point of the gradient is located at the coordinates specified by the custom CSS variables --x and --y.
+    In terms of the property's syntax, "transparent 10%" indicates that the gradient starts at the origin
+    point with a transparent color and 10% opacity, while "rgba(0,0,0,0.95) 20%" defines the color of the
+    gradient as it extends from the origin point, in this case a dark shade of black with 95% opacity.*/
+
+}
